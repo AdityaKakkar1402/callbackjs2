@@ -14,4 +14,16 @@ function getPost(){
     },1000)
 }
 
+function createPost(post){
+    setTimeout(()=>{
+        posts.push(post);
+    },2000);
+
+}
+
 getPost();
+
+createPost({
+    no:"3",
+    title:"post three"
+})
